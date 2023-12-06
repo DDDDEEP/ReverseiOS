@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02902932DB3A46301351E4FF /* Pods_ReverseiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88062E92ECAF5AF58F498D68 /* Pods_ReverseiOS.framework */; };
+		2B3DB8082B1F0FC3007FD3CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB8072B1F0FC3007FD3CE /* AppDelegate.m */; };
+		2B3DB80B2B1F0FC3007FD3CE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB80A2B1F0FC3007FD3CE /* SceneDelegate.m */; };
+		2B3DB80E2B1F0FC3007FD3CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB80D2B1F0FC3007FD3CE /* ViewController.m */; };
+		2B3DB8112B1F0FC3007FD3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB80F2B1F0FC3007FD3CE /* Main.storyboard */; };
+		2B3DB8132B1F0FC5007FD3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB8122B1F0FC5007FD3CE /* Assets.xcassets */; };
+		2B3DB8162B1F0FC5007FD3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB8142B1F0FC5007FD3CE /* LaunchScreen.storyboard */; };
+		2B3DB8192B1F0FC5007FD3CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB8182B1F0FC5007FD3CE /* main.m */; };
+		2B575BDE2B2016FD00839A07 /* MyHook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDAEE282B1F41DA00165965 /* MyHook.framework */; };
+		2BDAEE1C2B1F40B900165965 /* SignApp.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2BDAEE1A2B1F40B900165965 /* SignApp.sh */; };
+		2BDAEE1D2B1F40B900165965 /* insert_dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2BDAEE1B2B1F40B900165965 /* insert_dylib */; };
+		2BDAEE2B2B1F41DA00165965 /* MyHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDAEE2A2B1F41DA00165965 /* MyHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDAEE302B1F41FD00165965 /* MyHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAEE2F2B1F41FD00165965 /* MyHook.m */; };
+		B28C560C2425B2D2531BF757 /* Pods_MyHook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA956B9EB91E96DC5D81EA5 /* Pods_MyHook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B575BE02B2016FD00839A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B3DB7FB2B1F0FC3007FD3CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BDAEE272B1F41DA00165965;
+			remoteInfo = MyHook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10830E49F16163C0AF27CB49 /* Pods-MyHook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHook.debug.xcconfig"; path = "Target Support Files/Pods-MyHook/Pods-MyHook.debug.xcconfig"; sourceTree = "<group>"; };
+		2B3DB8032B1F0FC3007FD3CE /* ReverseiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3DB8062B1F0FC3007FD3CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B3DB8072B1F0FC3007FD3CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B3DB8092B1F0FC3007FD3CE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2B3DB80A2B1F0FC3007FD3CE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2B3DB80C2B1F0FC3007FD3CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B3DB80D2B1F0FC3007FD3CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B3DB8102B1F0FC3007FD3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B3DB8122B1F0FC5007FD3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B3DB8152B1F0FC5007FD3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B3DB8172B1F0FC5007FD3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3DB8182B1F0FC5007FD3CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BDAEE1A2B1F40B900165965 /* SignApp.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SignApp.sh; sourceTree = "<group>"; };
+		2BDAEE1B2B1F40B900165965 /* insert_dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = insert_dylib; sourceTree = "<group>"; };
+		2BDAEE282B1F41DA00165965 /* MyHook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyHook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDAEE2A2B1F41DA00165965 /* MyHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHook.h; sourceTree = "<group>"; };
+		2BDAEE2F2B1F41FD00165965 /* MyHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHook.m; sourceTree = "<group>"; };
+		496CF384FC037207F2FBEC63 /* Pods-ReverseiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseiOS.release.xcconfig"; path = "Target Support Files/Pods-ReverseiOS/Pods-ReverseiOS.release.xcconfig"; sourceTree = "<group>"; };
+		4BA956B9EB91E96DC5D81EA5 /* Pods_MyHook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D45D81CE5160AEAB2D6043E /* Pods-ReverseiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseiOS.debug.xcconfig"; path = "Target Support Files/Pods-ReverseiOS/Pods-ReverseiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		728DB5F3184F18F4D62681C9 /* Pods-MyHook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHook.release.xcconfig"; path = "Target Support Files/Pods-MyHook/Pods-MyHook.release.xcconfig"; sourceTree = "<group>"; };
+		88062E92ECAF5AF58F498D68 /* Pods_ReverseiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B3DB8002B1F0FC3007FD3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B575BDE2B2016FD00839A07 /* MyHook.framework in Frameworks */,
+				02902932DB3A46301351E4FF /* Pods_ReverseiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BDAEE252B1F41DA00165965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28C560C2425B2D2531BF757 /* Pods_MyHook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B3DB7FA2B1F0FC3007FD3CE = {
+			isa = PBXGroup;
+			children = (
+				2BDAEE192B1F40B900165965 /* tool */,
+				2B3DB8052B1F0FC3007FD3CE /* ReverseiOS */,
+				2BDAEE292B1F41DA00165965 /* MyHook */,
+				2B3DB8042B1F0FC3007FD3CE /* Products */,
+				2BDAEE312B1F433800165965 /* Frameworks */,
+				C351B892BBF8B05B1EB53C56 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2B3DB8042B1F0FC3007FD3CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B3DB8032B1F0FC3007FD3CE /* ReverseiOS.app */,
+				2BDAEE282B1F41DA00165965 /* MyHook.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B3DB8052B1F0FC3007FD3CE /* ReverseiOS */ = {
+			isa = PBXGroup;
+			children = (
+				2B3DB8062B1F0FC3007FD3CE /* AppDelegate.h */,
+				2B3DB8072B1F0FC3007FD3CE /* AppDelegate.m */,
+				2B3DB8092B1F0FC3007FD3CE /* SceneDelegate.h */,
+				2B3DB80A2B1F0FC3007FD3CE /* SceneDelegate.m */,
+				2B3DB80C2B1F0FC3007FD3CE /* ViewController.h */,
+				2B3DB80D2B1F0FC3007FD3CE /* ViewController.m */,
+				2B3DB80F2B1F0FC3007FD3CE /* Main.storyboard */,
+				2B3DB8122B1F0FC5007FD3CE /* Assets.xcassets */,
+				2B3DB8142B1F0FC5007FD3CE /* LaunchScreen.storyboard */,
+				2B3DB8172B1F0FC5007FD3CE /* Info.plist */,
+				2B3DB8182B1F0FC5007FD3CE /* main.m */,
+			);
+			path = ReverseiOS;
+			sourceTree = "<group>";
+		};
+		2BDAEE192B1F40B900165965 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAEE1A2B1F40B900165965 /* SignApp.sh */,
+				2BDAEE1B2B1F40B900165965 /* insert_dylib */,
+			);
+			path = tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		2BDAEE292B1F41DA00165965 /* MyHook */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAEE2A2B1F41DA00165965 /* MyHook.h */,
+				2BDAEE2F2B1F41FD00165965 /* MyHook.m */,
+			);
+			path = MyHook;
+			sourceTree = "<group>";
+		};
+		2BDAEE312B1F433800165965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA956B9EB91E96DC5D81EA5 /* Pods_MyHook.framework */,
+				88062E92ECAF5AF58F498D68 /* Pods_ReverseiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C351B892BBF8B05B1EB53C56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10830E49F16163C0AF27CB49 /* Pods-MyHook.debug.xcconfig */,
+				728DB5F3184F18F4D62681C9 /* Pods-MyHook.release.xcconfig */,
+				6D45D81CE5160AEAB2D6043E /* Pods-ReverseiOS.debug.xcconfig */,
+				496CF384FC037207F2FBEC63 /* Pods-ReverseiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BDAEE232B1F41DA00165965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BDAEE2B2B1F41DA00165965 /* MyHook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B3DB8022B1F0FC3007FD3CE /* ReverseiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B3DB81C2B1F0FC5007FD3CE /* Build configuration list for PBXNativeTarget "ReverseiOS" */;
+			buildPhases = (
+				FA67642B953ACCFCC931B368 /* [CP] Check Pods Manifest.lock */,
+				2B3DB7FF2B1F0FC3007FD3CE /* Sources */,
+				2B3DB8002B1F0FC3007FD3CE /* Frameworks */,
+				2B3DB8012B1F0FC3007FD3CE /* Resources */,
+				2B15C3BE2B1F129F003F0308 /* ShellScript */,
+				7160B573959DE8BB35665C4D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B575BE12B2016FD00839A07 /* PBXTargetDependency */,
+			);
+			name = ReverseiOS;
+			productName = dumpiOS;
+			productReference = 2B3DB8032B1F0FC3007FD3CE /* ReverseiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BDAEE272B1F41DA00165965 /* MyHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BDAEE2C2B1F41DA00165965 /* Build configuration list for PBXNativeTarget "MyHook" */;
+			buildPhases = (
+				33C79ACAFD8B5811190576E4 /* [CP] Check Pods Manifest.lock */,
+				2BDAEE232B1F41DA00165965 /* Headers */,
+				2BDAEE242B1F41DA00165965 /* Sources */,
+				2BDAEE252B1F41DA00165965 /* Frameworks */,
+				2BDAEE262B1F41DA00165965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyHook;
+			productName = MyHook;
+			productReference = 2BDAEE282B1F41DA00165965 /* MyHook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B3DB7FB2B1F0FC3007FD3CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2B3DB8022B1F0FC3007FD3CE = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2BDAEE272B1F41DA00165965 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 2B3DB7FE2B1F0FC3007FD3CE /* Build configuration list for PBXProject "ReverseiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B3DB7FA2B1F0FC3007FD3CE;
+			productRefGroup = 2B3DB8042B1F0FC3007FD3CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B3DB8022B1F0FC3007FD3CE /* ReverseiOS */,
+				2BDAEE272B1F41DA00165965 /* MyHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B3DB8012B1F0FC3007FD3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3DB8162B1F0FC5007FD3CE /* LaunchScreen.storyboard in Resources */,
+				2BDAEE1C2B1F40B900165965 /* SignApp.sh in Resources */,
+				2B3DB8132B1F0FC5007FD3CE /* Assets.xcassets in Resources */,
+				2BDAEE1D2B1F40B900165965 /* insert_dylib in Resources */,
+				2B3DB8112B1F0FC3007FD3CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BDAEE262B1F41DA00165965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B15C3BE2B1F129F003F0308 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$SRCROOT/tool/SignApp.sh\n";
+		};
+		33C79ACAFD8B5811190576E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyHook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7160B573959DE8BB35665C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReverseiOS/Pods-ReverseiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReverseiOS/Pods-ReverseiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReverseiOS/Pods-ReverseiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA67642B953ACCFCC931B368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReverseiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B3DB7FF2B1F0FC3007FD3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3DB80E2B1F0FC3007FD3CE /* ViewController.m in Sources */,
+				2B3DB8082B1F0FC3007FD3CE /* AppDelegate.m in Sources */,
+				2B3DB8192B1F0FC5007FD3CE /* main.m in Sources */,
+				2B3DB80B2B1F0FC3007FD3CE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BDAEE242B1F41DA00165965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BDAEE302B1F41FD00165965 /* MyHook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B575BE12B2016FD00839A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BDAEE272B1F41DA00165965 /* MyHook */;
+			targetProxy = 2B575BE02B2016FD00839A07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B3DB80F2B1F0FC3007FD3CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B3DB8102B1F0FC3007FD3CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B3DB8142B1F0FC5007FD3CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B3DB8152B1F0FC5007FD3CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B3DB81A2B1F0FC5007FD3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B3DB81B2B1F0FC5007FD3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B3DB81D2B1F0FC5007FD3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D45D81CE5160AEAB2D6043E /* Pods-ReverseiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT7ZL9CGHA;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReverseiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DEEP.ReverseiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B3DB81E2B1F0FC5007FD3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496CF384FC037207F2FBEC63 /* Pods-ReverseiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT7ZL9CGHA;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReverseiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DEEP.ReverseiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BDAEE2D2B1F41DA00165965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10830E49F16163C0AF27CB49 /* Pods-MyHook.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BT7ZL9CGHA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DEEP.MyHook;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BDAEE2E2B1F41DA00165965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728DB5F3184F18F4D62681C9 /* Pods-MyHook.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BT7ZL9CGHA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DEEP.MyHook;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B3DB7FE2B1F0FC3007FD3CE /* Build configuration list for PBXProject "ReverseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3DB81A2B1F0FC5007FD3CE /* Debug */,
+				2B3DB81B2B1F0FC5007FD3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B3DB81C2B1F0FC5007FD3CE /* Build configuration list for PBXNativeTarget "ReverseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3DB81D2B1F0FC5007FD3CE /* Debug */,
+				2B3DB81E2B1F0FC5007FD3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BDAEE2C2B1F41DA00165965 /* Build configuration list for PBXNativeTarget "MyHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BDAEE2D2B1F41DA00165965 /* Debug */,
+				2BDAEE2E2B1F41DA00165965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B3DB7FB2B1F0FC3007FD3CE /* Project object */;
+}
