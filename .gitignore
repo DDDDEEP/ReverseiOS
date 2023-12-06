@@ -104,6 +104,5 @@ node_modules/
 
 # app/ipa Folder
 temp/*
-!temp/.gitkeep
 app/*
 !app/.gitkeep
