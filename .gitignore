@@ -103,7 +103,7 @@ node_modules/
 
 
 # app/ipa Folder
-# temp/*
-# !temp
-# app/*
-# !app
+temp/*
+!temp
+app/*
+!app
