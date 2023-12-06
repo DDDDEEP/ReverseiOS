@@ -68,7 +68,7 @@ fi
 echo "Removing PlugIns and Watch"
 rm -rf "$TEMP_APP_PATH/PlugIns"
 rm -rf "$TEMP_APP_PATH/Watch"
-#rm -rf "$TEMP_APP_PATH/com.apple.WatchPlaceholder"
+rm -rf "$TEMP_APP_PATH/com.apple.WatchPlaceholder"
 
 
 # ================== 5、给可执行文件执行权限 ==================
